@@ -1,0 +1,40 @@
+.webfont {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#header-container {
+    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+#navigation_bar {
+    font-size: 18px;
+    background-color: white;
+}
+
+#landing-container {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+#landing-photo {
+    padding-bottom: 2%;
+}
+
+#bio {
+    background-color: white;
+    max-width: 50%;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}

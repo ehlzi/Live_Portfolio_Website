@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Order</title>
+</head>
+
+<body>
+
+<header class="header-container">
+    <nav class="nav-bar">
+
+        <div class="nav-image">
+            <a href="index.html"><img class="banner-img" src="images/logo.png" alt="Plant Bae Logo"></a>
+        </div>
+
+        <a href="index.html" class="nav-button"><span>HOME</span></a>
+        <a href="menu.html" class="nav-button"><span>MENU</span></a>
+        <a href="order.html" class="nav-button"><span>ORDER</span></a>
+        <a href="https://veganhealth.org/" class="nav-button"><span>NUTRITION FACTS</span></a>
+        <a href="about.html" class="nav-button"><span>ABOUT US</span></a>
+        <a href="contact.html" class="nav-button"><span>CONTACT</span></a>
+
+    </nav>
+
+    <div class="splash-norm">
+        <div class="styling-norm">
+            <a href="index.html"><img class="logo-img" src="images/logo.png" alt="Plant Bae Logo"></a>
+        </div>
+    </div>
+
+</header>
+
+<div class="order-container">
+
+    <form class="form" action="#" method="post">
+
+        <fieldset class="contact-information">
+
+            <legend class="legend-title">Contact Information</legend>
+            <div>
+                <label class="form-labels" for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required aria-label="First Name">
+            </div>
+            <div>
+                <label class="form-labels" for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required aria-label="Last Name">
+            </div>
+            <div>
+                <label class="form-labels" for="address1">Address Line 1:</label>
+                <input type="text" id="address1" name="address1" required aria-label="Address Line 1">
+            </div>
+            <div>
+                <label class="form-labels" for="address2">Address Line 2:</label>
+                <input type="text" id="address2" name="address2" aria-label="Address Line 2">
+            </div>
+            <div>
+                <label class="form-labels" for="city">City:</label>
+                <input type="text" id="city" name="city" required aria-label="City">
+            </div>
+            <div>
+                <label class="form-labels" for="state">State/Province:</label>
+                <select id="state" name="state" required aria-label="State/Province">
+                    <option value="" disabled selected>Select State/Province</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="form-labels" for="zipcode">Zip Code:</label>
+                <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Five-digit ZIP Code" required aria-label="Zip Code">
+            </div>
+
+            <div>
+                <label class="form-labels" for="pnumber">Phone Number:</label>
+                <input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{10}" title="10-digit phone number" required aria-label="Phone Number">
+            </div>
+
+        </fieldset>
+
+        <fieldset class="contact-information">
+
+            <legend class="legend-title">DRINKS - COFFEE - TEAS</legend>
+
+                <section>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/succulent.jpg" alt="Menu Item 1">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM SUCCULENT"</h2>
+                            <p class="description">
+                                GRAPEFRUIT, APPLE, CELERY, MINT
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-SUCCULENT">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-SUCCULENT" class="quantity" id="I-AM-SUCCULENT" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/plnetiful.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM PLENTIFUL"</h2>
+                            <p class="description">
+                                CRANBERRY, POMEGRANATE, BEET, GRAPE, CARROT, APPLE, GINGER
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-PLENTIFUL">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-PLENTIFUL" class="quantity" id="I-AM-PLENTIFUL" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/espresso.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM AWAKE"</h2>
+                            <p class="description">
+                                ESPRESSO
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-AWAKE">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-AWAKE" class="quantity" id="I-AM-AWAKE" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/latte.jpg" alt="Menu Item 1">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM CAREFREE"</h2>
+                            <p class="description">
+                                CAPPUCCINO
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-CAREFREE">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-CAREFREE" class="quantity" id="I-AM-CAREFREE" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/love-tea.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM LOVE"</h2>
+                            <p class="description">
+                                ELDERBERRY HIBISCUS ICED TEA
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-LOVE">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-LOVE" class="quantity" id="I-AM-LOVE" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/splendid-tea.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM SPLENDID"</h2>
+                            <p class="description">
+                                CLASSIC BLACK ICED TEA
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-SPLENDID">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-SPLENDID" class="quantity" id="I-AM-SPLENDID" required >
+                    </label>
+
+                </section>
+
+        </fieldset>
+
+        <fieldset class="contact-information">
+
+            <legend class="legend-title">LUNCH/DINNER</legend>
+
+                <section>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/iamawesome.jpg" alt="Menu Item 1">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM AWESOME"</h2>
+                            <p class="description">
+                                CRISPY EGGPLANT PARMESAN FOCACCIA basil hempseed pesto,
+                                coconut burrata, housemade marinara, brazil nut parmesan,
+                                and your choice of side
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-AWESOME">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-AWESOME" class="quantity" id="I-AM-AWESOME" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/iamenthusiastic.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM ENTHUSIASTIC"</h2>
+                            <p class="description">
+                                CHIK'N-FRIED MUSHROOM SANDWICH oyster mushrooms, tomato, pickles, romaine, buffalo sauce, ranch dressing, vegan brioche, choice of side
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-ENTHUSIASTIC">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-ENTHUSIASTIC" class="quantity" id="I-AM-ENTHUSIASTIC" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/iamgiving.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM GIVING": TUFFLED MUSHROOM</h2>
+                            <p class="description">
+                                TRUFFLED MUSHROOM PIZZA BIANCA oyster, crimini, shiitake mushrooms, doublebatch almond ricotta, truffled almond béchamel, coconut burrata, red chili flakes, arugula
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="TUFFLED-MUSHROOM">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="TUFFLED-MUSHROOM" class="quantity" id="TUFFLED-MUSHROOM" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/iamglorious.jpg" alt="Menu Item 1">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM GLORIOUS"</h2>
+                            <p class="description">
+                                CHIK'N-FRIED MUSHROOM SANDWICH oyster mushrooms, tomato, pickles, romaine, buffalo sauce, ranch dressing, vegan brioche, choice of side
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-GLORIOUS">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-GLORIOUS" class="quantity" id="I-AM-GLORIOUS" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/iamgreat.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM GREAT"</h2>
+                            <p class="description">
+                                LION'S MANE 'STEAK N' EGGS' BREAKFAST SANDWICH housemade mung bean egg, almond cheddar cheese, sriracha mayo, crispy shallots, BBQ sauce, shredded romaine, tomato, vegan brioche
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-GREAT">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-GREAT" class="quantity" id="I-AM-GREAT" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/iammargherita.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM GIVING": MARGHERITA</h2>
+                            <p class="description">
+                                MARGHERITA PIZZA heirloom cherry tomatoes, housemade marinara, basil hemp seed pesto, coconut burrata, brazil nut parmesan
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-GIVING">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-GIVING" class="quantity" id="I-AM-GIVING" required >
+                    </label>
+                </section>
+
+        </fieldset>
+
+        <fieldset class="contact-information">
+
+            <legend class="legend-title">DESSERT</legend>
+
+                <section>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/vicious-dessert.jpg" alt="Menu Item 1">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM VICIOUS"</h2>
+                            <p class="description">
+                                STRAWBERRY MERINGUE PIE coconut cashew crust, strawberry meringue custard, brazil nut, cashew whipped cream (gluten free)
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-VICIOUS">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-VICIOUS" class="quantity" id="I-AM-VICIOUS" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/mindful-dessert.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM MINDFUL"</h2>
+                            <p class="description">
+                                STRAWBERRY RHUBARB OAT CRISP seasonal fruit, oatmeal crumble topping
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-MINDFUL">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-MINDFUL" class="quantity" id="I-AM-MINDFUL" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/awake-dessert.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"KEY LIME PIE"</h2>
+                            <p class="description">
+                                RAW KEY LIME PIE lime, avocado & coconut custard, pecan-date crust, cashew whipped cream
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="KEY-LIME-PIE">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="KEY-LIME-PIE" class="quantity" id="KEY-LIME-PIE" required >
+                    </label>
+
+                    <br>
+
+                    <div class="menu-item-img-container">
+                        <img class="menu-item-img" src="images/fooditemsmenu/devine-dessert.jpg" alt="Menu Item 2">
+                        <div class="menu-item-text-container">
+                            <h2 class="title">"I AM DEVINE"</h2>
+                            <p class="description">
+                                STRAWBERRY SHORTCAKE PARFAIT almond shortcake, marinated strawberries, cashew whipped cream
+                            </p>
+                        </div>
+                    </div>
+
+                    <label class="form-labels" for="I-AM-DEVINE">
+                        <br>
+                        QUANTITY:
+                        <input type="number" name="I-AM-DEVINE" class="quantity" id="I-AM-DEVINE" required >
+                    </label>
+                </section>
+
+        </fieldset>
+
+        <fieldset class="contact-information">
+
+            <legend class="legend-title">Allergies</legend>
+            <div>
+                <label class="form-labels"><input type="radio" name="allergies" value="yes" aria-label="Yes, I have allergies"> Yes</label>
+                <label class="form-labels"><input type="radio" name="allergies" value="no" aria-label="No, I don't have allergies"> No</label>
+            </div>
+            <div>
+                <label class="form-labels" for="extra_allergies">Please specify:</label><br>
+                <textarea name="extra_allergies" id="extra_allergies" rows="3" cols="40" aria-label="Specify allergies if any"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="contact-information">
+            <legend class="legend-title">Additional Sauces</legend>
+            <div>
+                <input type="checkbox" name="sauces" value="" id="sauceone">
+                <label class="form-labels" for="sauceone">Tzatziki</label>
+                <input type="checkbox" name="sauces" value="" id="saucetwo">
+                <label class="form-labels" for="saucetwo">Harissa Aioli</label>
+                <input type="checkbox" name="sauces" value="0" id="saucethree">
+                <label class="form-labels" for="saucethree">Tahini Dressing</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="contact-information">
+            <legend class="legend-title">Additional Requests</legend>
+            <div>
+                <label class="form-labels" for="extra_requests">Anything else you'd like to add?</label><br>
+                <textarea name="extra_requests" id="extra_requests" rows="3" cols="40" aria-label="Additional Requests"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset class="contact-information">
+            <legend class="legend-title">Credit Card Information</legend>
+            <div>
+                <label class="form-labels" for="cardholderfname">Cardholder First Name:</label>
+                <input type="text" name="cardholderfname" id="cardholderfname" required aria-label="Cardholder First Name">
+            </div>
+            <div>
+                <label class="form-labels"  for="cardholderlname">Cardholder Last Name:</label>
+                <input type="text" name="cardholderlname" id="cardholderlname" required aria-label="Cardholder Last Name">
+            </div>
+            <div>
+                <label class="form-labels">Is your Billing Address the same as your Delivery Address?</label><br>
+                <label class="form-labels"><input type="radio" name="baddressconfirm" value="yes" aria-label="Yes, Billing Address is the same"> Yes</label>
+                <label class="form-labels"><input type="radio" name="baddressconfirm" value="no" aria-label="No, Billing Address is different"> No</label>
+            </div>
+            <div>
+                <label class="form-labels" for="billingaddress1">Address Line 1:</label>
+                <input class="form-labels" type="text" name="billingaddress1" id="billingaddress1" required aria-label="Billing Address Line 1">
+            </div>
+            <div>
+                <label class="form-labels" for="billingaddress2">Address Line 2:</label>
+                <input type="text" name="billingaddress2" id="billingaddress2" aria-label="Billing Address Line 2">
+            </div>
+            <div>
+                <label class="form-labels" for="billingcity">City:</label>
+                <input type="text" name="billingcity" id="billingcity" required aria-label="Billing City">
+            </div>
+            <div>
+                <label class="form-labels" for="billingstate">State/Province:</label>
+                <select id="billingstate" name="billingstate" required aria-label="Billing State/Province">
+                    <option value="" disabled selected>Billing Select State/Province</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+            <div>
+                <label class="form-labels" for="billing_zipcode">Zip Code:</label>
+                <input type="number" name="billing_zipcode" id="billing_zipcode" required aria-label="Billing Zip Code">
+            </div>
+            <div>
+                <label class="form-labels" for="card_number">Card Number:</label>
+                <input type="text" name="card_number" id="card_number" required aria-label="Credit Card Number">
+            </div>
+            <div>
+                <label class="form-labels" for="expiry_date">Expiry Date:</label>
+                <input type="date" name="expiry_date" id="expiry_date" required aria-label="Credit Card Expiry Date">
+            </div>
+            <div>
+                <label class="form-labels" for="cvv">CVV:</label>
+                <input type="text" name="cvv" id="cvv" required maxlength="4" aria-label="Credit Card CVV">
+            </div>
+        </fieldset>
+
+        <div class="form-submit-container">
+            <input class="form-submit" type="submit" value="Submit" aria-label="Submit Order">
+        </div>
+    </form>
+
+</div>
+
+<footer>
+    <nav class="footer-bar">
+
+        <div class="nav-image">
+            <a href="index.html"><img class="banner-img" src="images/logo.png" alt="Plant Bae Logo"></a>
+        </div>
+
+        <a href="index.html" class="nav-button"><span>HOME</span></a>
+        <a href="menu.html" class="nav-button"><span>MENU</span></a>
+        <a href="order.html" class="nav-button"><span>ORDER</span></a>
+        <a href="https://veganhealth.org/" class="nav-button"><span>NUTRITION FACTS</span></a>
+        <a href="about.html" class="nav-button"><span>ABOUT US</span></a>
+        <a href="contact.html" class="nav-button"><span>CONTACT</span></a>
+
+    </nav>
+    <p class="description">&copy; 2024 Plant Bae. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
