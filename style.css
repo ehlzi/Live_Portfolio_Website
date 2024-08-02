@@ -4,37 +4,330 @@
     font-style: normal;
 }
 
+.desctiption {
+	
+}
+
+.title {
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+#user-image-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+
+#user-image {
+	border-radius: 100%;
+}
+
 #header-container {
-    background-color: grey;
     display: flex;
-    justify-content: space-evenly;
-    padding: 1%;
+	//align-content: center;
+    padding: 0.5%;
 }
 
-#navigation_bar {
-    font-size: 18px;
-    background-color: white;
+#work-experience-header-container {
+	padding: 2%;
 }
 
-#landing-container {
-    background-color: lightblue;
+#work-experience-title {
+	font-size: 50px;
+}
+
+#website-selector-container {
+	
+}
+
+#navigation-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#nav-button-container {
+    display: flex;
+	justify-content: center;
+    align-content: center;
+    margin-left: 60%;
+    width: 100%;
+}
+
+#logo-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#nav-logo {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    padding: 0.5%;
+}
+
+.nav-button {
+    color: black;
+   	margin: 2%;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#landing-container, 
+#bio-container,
+#welcome-container,
+.experience-container,
+.website-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2%;
+}
+
+#airforce-web-container {
+	padding: 2%;
+}
+
+.website-message-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+#bio-container {
+}
+
+#passions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #landing-photo {
-    padding-bottom: 2%;
+    padding: 2%;
+}
+ 
+#professional-experience, 
+#passions {
+    max-width: 50%;
+    text-align: center;
+    padding: 1%;
 }
 
 #bio {
-    background-color: white;
-    max-width: 50%;
+    max-width: 25%;
+    padding: 1%;
+	text-align: center;
+}
+
+#welcome {
+    max-width: 75%;
+    padding: 1%;
+	text-align: center;
+}
+
+#splash-bio-container {
+	
+}
+
+#learnmore-container {
+    background-color: blue;
+    width: 5%;
+    padding: 1%;
     text-align: center;
+}
+
+#learnmore-button {
+    color: white;
 }
 
 #footer {
     text-align: center;
+}
+
+/* Test Experience Page */
+
+#work-experience-header-container {
+	display: flex;
+	justify-content: center;
+}
+
+.experience-container {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.website-container {
+	padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#website-selector-container {
+	padding: 5%;
+}
+
+.website-img-container:hover {
+    transform: scale(1.02);
+}
+
+#experiences, #websites {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1%;
+}
+
+.experience-item-container {
+    width: auto;
+    display: flex;
+    box-shadow: 1px 1px 5px lightgrey;
+}
+
+.website-img-container {
+	width: 100%;
+    display: flex;
+	justify-content: center;
+    box-shadow: 1px 1px 5px lightgrey;
+	transition: transform 0.3s ease;
+}
+
+.experience-item-container:hover {
+    transform: scale(1.02);
+}
+
+.experience-item-img-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.website-item-img-container {
+	display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.experience-item-img-container:hover {
+    transform: scale(1.02);
+}
+
+.experience-item-img {
+    width: 25%;
+}
+
+.website-item-img {
+	width: 11%;
+}
+
+.experience-item-text-container, .website-item-text-container {
+    display: flex;
+    padding-left: 2%;
+    flex-direction: column;
+}
+
+/* Test Landing Page */
+
+.styling-norm {
+	background-color: white;
+	border-radius: 25px;
+	margin: 5%;
+    max-width: auto;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.logo-img {
+    width: 25%;
+}
+
+.splash-norm {
+	display: flex;
+	justify-content: center;
+	border-radius: 25px;
+	margin: 2%;
+    height: auto;
+    background-image: url("Images/portfoliosite/clouds.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 0;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+.btn-main {
+    background-color: black;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 50px;
+    min-width: 50px;
+}
+
+.btn-main:hover {
+    opacity: 40%;
+    border-radius: 5px;
+}
+
+/* Test About */
+#meet-header-container {
+	display: flex;
+	justify-content: center;
+}
+
+.meet-container {
+    padding: 5%;
+    display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.meet-me {
+	justify-content: center;
+	
+}
+
+.meet-container {
+    display: flex;
+	justify-content: center;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.meet-item-img {
+    width: auto;
+}
+
+.meet-item-text-container {
+    display: flex;
+	width: 25%;
+    padding-left: 2%;
+    flex-direction: column;
 }
