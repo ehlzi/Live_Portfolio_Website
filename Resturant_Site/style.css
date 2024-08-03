@@ -479,7 +479,7 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 765px) {
     /* Body */
     body {
         min-width: 320px;

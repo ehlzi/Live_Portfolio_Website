@@ -1,333 +1,483 @@
+/*
+This organized version groups related styles together and follows a general hierarchy:
+1. Global styles
+2. Typography
+3. Layout components
+4. User image styles
+5. Navigation styles
+6. Content section styles
+7. Experience page styles
+8. Website section styles
+9. Landing page styles
+10. About page styles
+
+Within each section, properties are generally ordered as follows:
+1. Display and positioning
+2. Box model (width, height, margin, padding)
+3. Typography
+4. Colors and backgrounds
+5. Borders and box-shadow
+6. Transitions and animations
+*/
+
+/* 1. Global Styles */
 .webfont {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.desctiption {
-	
-}
-
-.title {
-	
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-#user-image-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 2%;
+/* 2. Typography */
+.description {
+  /* Add properties here */
 }
 
-#user-image {
-	border-radius: 100%;
+.title {
+  /* Add properties here */
 }
 
+/* 3. Layout Components */
 #header-container {
-    display: flex;
-	//align-content: center;
-    padding: 0.5%;
+  display: flex;
+  padding: 0.5%;
 }
 
-#work-experience-header-container {
-	padding: 2%;
-}
-
-#work-experience-title {
-	font-size: 50px;
-}
-
-#website-selector-container {
-	
-}
-
-#navigation-bar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-#nav-button-container {
-    display: flex;
-	justify-content: center;
-    align-content: center;
-    margin-left: 60%;
-    width: 100%;
-}
-
-#logo-container {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-#nav-logo {
-    display: flex;
-    align-items: center;
-    width: 15%;
-    padding: 0.5%;
-}
-
-.nav-button {
-    color: black;
-   	margin: 2%;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-#landing-container, 
+#landing-container,
 #bio-container,
 #welcome-container,
 .experience-container,
 .website-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#airforce-web-container {
-	padding: 2%;
-}
-
-.website-message-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-}
-
-#bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #passions-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#landing-photo {
-    padding: 2%;
+/* 4. User Image */
+#user-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
- 
-#professional-experience, 
-#passions {
-    max-width: 50%;
-    text-align: center;
-    padding: 1%;
+
+#user-image {
+  border-radius: 100%;
+}
+
+/* 5. Navigation */
+#navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#nav-button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo-container {
+  /* Add properties here */
+}
+
+#nav-logo {
+  display: flex;
+  width: 50px;
+}
+
+/* 6. Content Sections */
+#landing-photo {
+  padding: 2%;
+}
+
+#professional-experience {
+  max-width: 50%;
+  padding: 1%;
+  text-align: center;
 }
 
 #bio {
-    max-width: 25%;
-    padding: 1%;
-	text-align: center;
+  max-width: 25%;
+  padding: 1%;
+  text-align: center;
 }
 
 #welcome {
-    max-width: 75%;
-    padding: 1%;
-	text-align: center;
+  max-width: 75%;
+  padding: 1%;
+  text-align: center;
 }
 
 #splash-bio-container {
-	
+  min-width: 500px;
 }
 
 #learnmore-container {
-    background-color: blue;
-    width: 5%;
-    padding: 1%;
-    text-align: center;
+  width: 5%;
+  padding: 1%;
+  text-align: center;
+  background-color: blue;
 }
 
 #learnmore-button {
-    color: white;
+  color: white;
 }
 
 #footer {
-    text-align: center;
+  text-align: center;
 }
 
-/* Test Experience Page */
-
+/* 7. Experience Page */
 #work-experience-header-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
 }
 
-.experience-container {
-    padding: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+#work-experience-title {
+  font-size: 50px;
 }
 
-.website-container {
-	padding: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+#experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 5%;
 }
 
-#website-selector-container {
-	padding: 5%;
-}
-
-.website-img-container:hover {
-    transform: scale(1.02);
-}
-
-#experiences, #websites {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    padding: 1%;
+#experiences {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .experience-item-container {
-    width: auto;
-    display: flex;
-    box-shadow: 1px 1px 5px lightgrey;
-}
-
-.website-img-container {
-	width: 100%;
-    display: flex;
-	justify-content: center;
-    box-shadow: 1px 1px 5px lightgrey;
-	transition: transform 0.3s ease;
+  display: flex;
+  box-shadow: 1px 1px 5px lightgrey;
 }
 
 .experience-item-container:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .experience-item-img-container {
-    display: flex;
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.website-item-img-container {
-	display: flex;
-    width: 100%;
-    transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .experience-item-img-container:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .experience-item-img {
-    width: 25%;
+  width: 300px;
+  height: 300px;
+}
+
+.experience-item-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+/* 8. Website Section */
+#website-selector-container {
+  padding: 5%;
+}
+
+.website-container {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#websites {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 1%;
+}
+
+.website-img-container {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.website-img-container:hover {
+  transform: scale(1.02);
+}
+
+.website-item-img-container {
+  display: flex;
+  width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .website-item-img {
-	width: 11%;
+  width: 15%;
 }
 
-.experience-item-text-container, .website-item-text-container {
-    display: flex;
-    padding-left: 2%;
-    flex-direction: column;
+#airforce-web-container {
+  padding: 2%;
 }
 
-/* Test Landing Page */
+.website-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.website-item-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+/* 9. Landing Page Styles */
 .styling-norm {
-	background-color: white;
-	border-radius: 25px;
-	margin: 5%;
-    max-width: auto;
-    padding: 2%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 5%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
 }
 
 .logo-img {
-    width: 25%;
+  width: 25%;
 }
 
 .splash-norm {
-	display: flex;
-	justify-content: center;
-	border-radius: 25px;
-	margin: 2%;
-    height: auto;
-    background-image: url("Images/portfoliosite/clouds.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-bottom: 0;
-    background-attachment: fixed;
-    background-position: center 0;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 2%;
+  padding-bottom: 0;
+  background-image: url("Images/portfoliosite/clouds.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+  border-radius: 25px;
 }
 
 .btn-main {
-    background-color: black;
-    color: white;
-    font-family: "Oswald", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 16px 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.2s;
-    border-radius: 50px;
-    min-width: 50px;
+  min-width: 50px;
+  padding: 16px 40px;
+  background-color: black;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 50px;
 }
 
 .btn-main:hover {
-    opacity: 40%;
-    border-radius: 5px;
+  opacity: 40%;
+  border-radius: 5px;
 }
 
-/* Test About */
+/* 10. About Page */
 #meet-header-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .meet-container {
-    padding: 5%;
-    display: flex;
-	justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5%;
+  transition: transform 0.3s ease;
 }
 
 .meet-me {
-	justify-content: center;
-	
-}
-
-.meet-container {
-    display: flex;
-	justify-content: center;
-    width: 100%;
-    transition: transform 0.3s ease;
+  justify-content: center;
 }
 
 .meet-item-img {
-    width: auto;
+  margin-bottom: 17%;
 }
 
 .meet-item-text-container {
-    display: flex;
-	width: 25%;
-    padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-left: 2%;
+}
+
+/* Buttons */
+
+.nav-button {
+  padding: 2%;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  border: none;
+}
+
+a span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+  position: relative;
+}
+
+a span:after {
+  content: "\00b7";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a:hover span {
+  padding-right: 1em;
+  color: cornflowerblue;
+}
+
+a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 765px) {
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  #navigation-bar {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  #nav-button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+
+  #nav-logo {
+    max-width: 20%;
+    margin: 10px auto;
+  }
+
+  /* Landing Page */
+  #splash-bio-container {
+    width: 500px;
+  }
+
+  /* About Page */
+  .meet-container {
+    flex-direction: column;
+    max-width: 765px;
+    padding: 5%;
+  }
+
+  .meet-item-img {
+    width: 50%;
+  }
+
+  .meet-item-text-container {
+    width: 80%;
+  }
+
+  /* Experience Page */
+  #experience-container {
+    padding-top: 5%;
+    align-items: center;
+  }
+
+  #experiences {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-item-container {
+    width: 90%;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Added margin for separation */
+  }
+
+  .experience-item-img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-item-img {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+  }
+
+  .experience-item-text-container {
+    width: 100%;
+  }
+
+  /* Website Page */
+  #websites {
+    grid-template-columns: 1fr; /* Changed to single column */
+    gap: 20px;
+  }
+
+  .website-img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .website-item-img {
+    width: 200px;
+  }
 }
