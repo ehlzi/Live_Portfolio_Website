@@ -222,6 +222,7 @@ a {
   padding: 2%;
   display: flex;
   justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 
@@ -237,6 +238,7 @@ a {
 
 .website-item-img {
   width: 15%;
+  height: 15%;
 }
 
 #airforce-web-container {
@@ -324,13 +326,14 @@ a {
 }
 
 .meet-item-img {
-  margin-bottom: 17%;
+  width: 25%;
+  margin-bottom: 20%;
 }
 
 .meet-item-text-container {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 50%;
   padding-left: 2%;
 }
 
