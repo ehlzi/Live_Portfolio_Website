@@ -1,16 +1,4 @@
 /*
-This organized version groups related styles together and follows a general hierarchy:
-1. Global styles
-2. Typography
-3. Layout components
-4. User image styles
-5. Navigation styles
-6. Content section styles
-7. Experience page styles
-8. Website section styles
-9. Landing page styles
-10. About page styles
-
 Within each section, properties are generally ordered as follows:
 1. Display and positioning
 2. Box model (width, height, margin, padding)
@@ -39,6 +27,32 @@ a {
   text-decoration: none;
 }
 
+a span {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+a span:after {
+  content: "\00b7";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+a:hover span {
+  color: cornflowerblue;
+  padding-right: 1em;
+}
+
+a:hover span:after {
+  right: 0;
+  opacity: 1;
+}
+
 /* 1. Navigation */
 #header-container {
   display: flex;
@@ -60,19 +74,17 @@ a {
 }
 
 .navigation-button {
-  padding: 2%;
+  display: inline-block;
   width: 100%;
-  color: black;
+  padding: 2%;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.5s;
-  cursor: pointer;
-  float: left;
-  display: inline-block;
+  color: black;
   border: none;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 #navigation-bar-logo {
@@ -83,6 +95,18 @@ a {
 /* 2. Splash Screen */
 #splash-bio-container {
   min-width: 500px;
+}
+
+#welcome-message-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#welcome-message-article {
+  max-width: 75%;
+  padding: 1%;
+  text-align: center;
 }
 
 .splash-styling {
@@ -104,9 +128,33 @@ a {
   width: 25%;
   margin: 5%;
   padding: 2%;
+  text-align: center;
   background-color: white;
   border-radius: 25px;
-  text-align: center;
+}
+
+.logo-img {
+  width: 25%;
+}
+
+#learn-more-button {
+  min-width: 50px;
+  padding: 16px 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+#learn-more-button:hover {
+  border-radius: 5px;
+  opacity: 40%;
 }
 
 /* 3. About Page */
@@ -171,23 +219,17 @@ a {
 }
 
 .website-article {
-  width: 100%;
-  padding: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 2%;
+  color: black;
   transition: transform 0.3s ease;
 }
 
 .website-article:hover {
   transform: scale(1.02);
-}
-
-.website-article {
-  display: flex;
-  width: 100%;
-  transition: transform 0.3s ease;
-  color: black;
 }
 
 .website-img {
@@ -209,124 +251,9 @@ a {
   padding: 2%;
 }
 
-
-/* 3. Layout Components */
-
-#landing-container,
-#bio-container,
-#welcome-message-container,
-.website-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-/* 4. User Image */
-#user-image-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2%;
-}
-
-#user-image {
-  border-radius: 100%;
-}
-
-/* 6. Content Sections */
-#landing-photo {
-  padding: 2%;
-}
-
-#professional-experience {
-  max-width: 50%;
-  padding: 1%;
-  text-align: center;
-}
-
-#bio {
-  max-width: 25%;
-  padding: 1%;
-  text-align: center;
-}
-
-#welcome-message-article {
-  max-width: 75%;
-  padding: 1%;
-  text-align: center;
-}
-
-#learnmore-container {
-  width: 5%;
-  padding: 1%;
-  text-align: center;
-  background-color: blue;
-}
-
-#learnmore-button {
-  color: white;
-}
-
 #footer {
   text-align: center;
 }
-
-
-/* 9. Landing Page Styles */
-
-
-.logo-img {
-  width: 25%;
-}
-
-.btn-main {
-  min-width: 50px;
-  padding: 16px 40px;
-  background-color: black;
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.2s;
-  border-radius: 50px;
-}
-
-.btn-main:hover {
-  opacity: 40%;
-  border-radius: 5px;
-}
-
-
-/* Buttons */
-
-a span {
-  cursor: pointer;
-  display: inline-block;
-  transition: 0.5s;
-  position: relative;
-}
-
-a span:after {
-  content: "\00b7";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-a:hover span {
-  padding-right: 1em;
-  color: cornflowerblue;
-}
-
-a:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 
 /* Responsive */
 @media only screen and (max-width: 765px) {
@@ -341,18 +268,18 @@ a:hover span:after {
     align-items: stretch;
   }
 
-  #nav-button-container {
+  #navigation-button-container {
     flex-direction: column;
     width: 100%;
   }
 
-  .nav-button {
+  .navigation-button {
     width: 100%;
     margin: 5px 0;
     padding: 10px 0;
   }
 
-  #nav-logo {
+  #navigation-bar-logo {
     max-width: 20%;
     margin: 10px auto;
   }
@@ -363,18 +290,18 @@ a:hover span:after {
   }
 
   /* About Page */
-  .meet-container {
+  #about-me-container {
+	display: flex;
     flex-direction: column;
     max-width: 765px;
-    padding: 5%;
   }
 
-  .meet-item-img {
-    width: 50%;
+  #about-me-img {
+    width: 300px;
   }
 
-  .meet-item-text-container {
-    width: 80%;
+  #about-me-text-container {
+    width: 90%;
   }
 
   /* Experience Page */
@@ -383,52 +310,64 @@ a:hover span:after {
     align-items: center;
   }
 
-  #experiences {
+  #experiences-grid-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .experience-item-container {
-    width: 90%;
+  #Experience_1,
+  #Experience_2,
+  #Experience_3,
+  #Experience_4,
+  #Experience_5 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-article {
+    width: 100%;
     max-width: 500px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px; /* Added margin for separation */
   }
 
-  .experience-item-img-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .experience-article-img {
+    padding-top: 5%;
+    width: 200px;
+    height: 200px;
   }
 
-  .experience-item-img {
-    height: 250px;
-    width: 250px;
-    object-fit: contain;
-  }
-
-  .experience-item-text-container {
-    width: 100%;
+  .experience-article-text {
+    width: 75%;
   }
 
   /* Website Page */
-  #websites {
-    grid-template-columns: 1fr; /* Changed to single column */
-    gap: 20px;
-  }
 
-  .website-img-container {
+  .website-article {
     flex-direction: column;
     align-items: center;
+    width: 75%;
+    padding: 5%;
   }
 
-  .website-item-img {
+  .website-img {
     width: 200px;
+    height: 200px;
+  }
+
+  .website-container {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+  }
+
+  #website-selector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
