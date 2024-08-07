@@ -40,7 +40,7 @@ a {
   /* Add properties here */
 }
 
-/* 5. Navigation */
+/* 1. Navigation */
 #header-container {
   display: flex;
   padding: 0.5%;
@@ -85,7 +85,7 @@ a {
   width: 50px;
 }
 
-/* Splash Screen */
+/* 2. Splash Screen */
 #splash-bio-container {
   min-width: 500px;
 }
@@ -114,13 +114,77 @@ a {
   text-align: center;
 }
 
+/* 3. About Page */
+#about-me-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5%;
+  transition: transform 0.3s ease;
+}
+
+#about-me-img {
+  width: 25%;
+  margin-bottom: 20%;
+}
+
+#about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 2%;
+}
+
+/* 4. Experience Page */
+#experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#experiences-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.experience-item-container-shadow {
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
+.experience-item-container-shadow:hover {
+  transform: scale(1.02);
+}
+
+.experience-article {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.experience-article:hover {
+  transform: scale(1.02);
+}
+
+.experience-article-img {
+  width: 300px;
+  height: 300px;
+}
+
+.experience-article-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
 
 /* 3. Layout Components */
 
 #landing-container,
 #bio-container,
 #welcome-message-container,
-.experience-container,
 .website-container {
   display: flex;
   flex-direction: column;
@@ -182,61 +246,6 @@ a {
 
 #footer {
   text-align: center;
-}
-
-/* 7. Experience Page */
-#work-experience-header-container {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-}
-
-#work-experience-title {
-  font-size: 50px;
-}
-
-#experience-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 5%;
-}
-
-#experiences {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.experience-item-container {
-  display: flex;
-  box-shadow: 1px 1px 5px lightgrey;
-}
-
-.experience-item-container:hover {
-  transform: scale(1.02);
-}
-
-.experience-item-img-container {
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.experience-item-img-container:hover {
-  transform: scale(1.02);
-}
-
-.experience-item-img {
-  width: 300px;
-  height: 300px;
-}
-
-.experience-item-text-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
 }
 
 /* 8. Website Section */
@@ -327,40 +336,8 @@ a {
   border-radius: 5px;
 }
 
-/* 10. About Page */
-#meet-header-container {
-  display: flex;
-  justify-content: center;
-}
-
-.meet-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 5%;
-  transition: transform 0.3s ease;
-}
-
-.meet-me {
-  justify-content: center;
-}
-
-.meet-item-img {
-  width: 25%;
-  margin-bottom: 20%;
-}
-
-.meet-item-text-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 2%;
-}
 
 /* Buttons */
-
-
 
 a span {
   cursor: pointer;
