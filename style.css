@@ -27,17 +27,16 @@ Within each section, properties are generally ordered as follows:
   font-style: normal;
 }
 
+.shadow {
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
+.shadow:hover {
+  transform: scale(1.02);
+}
+
 a {
   text-decoration: none;
-}
-
-/* 2. Typography */
-.description {
-  /* Add properties here */
-}
-
-.title {
-  /* Add properties here */
 }
 
 /* 1. Navigation */
@@ -74,10 +73,6 @@ a {
   float: left;
   display: inline-block;
   border: none;
-}
-
-#navigation-bar-logo-container {
-  /* Add properties here */
 }
 
 #navigation-bar-logo {
@@ -138,10 +133,8 @@ a {
 
 /* 4. Experience Page */
 #experience-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #experiences-grid-container {
@@ -149,14 +142,6 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-}
-
-.experience-item-container-shadow {
-  box-shadow: 1px 1px 5px lightgrey;
-}
-
-.experience-item-container-shadow:hover {
-  transform: scale(1.02);
 }
 
 .experience-article {
@@ -180,6 +165,51 @@ a {
   padding-left: 2%;
 }
 
+/* 5. Website Page */
+#website-selector-container {
+  padding: 5%;
+}
+
+.website-article {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.website-article:hover {
+  transform: scale(1.02);
+}
+
+.website-article {
+  display: flex;
+  width: 100%;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.website-img {
+  width: 15%;
+  height: 15%;
+}
+
+.website-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+.description {
+  width: 95%;
+}
+
+#airforce-web-container {
+  padding: 2%;
+}
+
+
 /* 3. Layout Components */
 
 #landing-container,
@@ -187,14 +217,6 @@ a {
 #welcome-message-container,
 .website-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#passions-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -248,66 +270,6 @@ a {
   text-align: center;
 }
 
-/* 8. Website Section */
-#website-selector-container {
-  padding: 5%;
-}
-
-.website-container {
-  padding: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-#websites {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  padding: 1%;
-}
-
-.website-img-container {
-  width: 100%;
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.website-img-container:hover {
-  transform: scale(1.02);
-}
-
-.website-item-img-container {
-  display: flex;
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-
-.website-item-img {
-  width: 15%;
-  height: 15%;
-}
-
-#airforce-web-container {
-  padding: 2%;
-}
-
-.website-message-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.website-item-text-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
-}
 
 /* 9. Landing Page Styles */
 
