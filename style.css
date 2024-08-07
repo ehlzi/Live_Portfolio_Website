@@ -40,15 +40,86 @@ a {
   /* Add properties here */
 }
 
-/* 3. Layout Components */
+/* 5. Navigation */
 #header-container {
   display: flex;
   padding: 0.5%;
 }
 
+#navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#navigation-button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-button {
+  padding: 2%;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  border: none;
+}
+
+#navigation-bar-logo-container {
+  /* Add properties here */
+}
+
+#navigation-bar-logo {
+  display: flex;
+  width: 50px;
+}
+
+/* Splash Screen */
+#splash-bio-container {
+  min-width: 500px;
+}
+
+.splash-styling {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 2%;
+  padding-bottom: 0;
+  background-image: url("Images/portfoliosite/clouds.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+  border-radius: 25px;
+}
+
+.splash-bio-styling {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 5%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+
+
+/* 3. Layout Components */
+
 #landing-container,
 #bio-container,
-#welcome-container,
+#welcome-message-container,
 .experience-container,
 .website-container {
   display: flex;
@@ -75,30 +146,6 @@ a {
   border-radius: 100%;
 }
 
-/* 5. Navigation */
-#navigation-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-#nav-button-container {
-  display: flex;
-  flex-direction: row;
-}
-
-#logo-container {
-  /* Add properties here */
-}
-
-#nav-logo {
-  display: flex;
-  width: 50px;
-}
-
 /* 6. Content Sections */
 #landing-photo {
   padding: 2%;
@@ -116,14 +163,10 @@ a {
   text-align: center;
 }
 
-#welcome {
+#welcome-message-article {
   max-width: 75%;
   padding: 1%;
   text-align: center;
-}
-
-#splash-bio-container {
-  min-width: 500px;
 }
 
 #learnmore-container {
@@ -258,32 +301,10 @@ a {
 }
 
 /* 9. Landing Page Styles */
-.styling-norm {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  margin: 5%;
-  padding: 2%;
-  background-color: white;
-  border-radius: 25px;
-  text-align: center;
-}
+
 
 .logo-img {
   width: 25%;
-}
-
-.splash-norm {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: 2%;
-  padding-bottom: 0;
-  background-image: url("Images/portfoliosite/clouds.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center 0;
-  border-radius: 25px;
 }
 
 .btn-main {
@@ -339,21 +360,7 @@ a {
 
 /* Buttons */
 
-.nav-button {
-  padding: 2%;
-  width: 100%;
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.5s;
-  cursor: pointer;
-  float: left;
-  display: inline-block;
-  border: none;
-}
+
 
 a span {
   cursor: pointer;
@@ -413,7 +420,7 @@ a:hover span:after {
 
   /* Landing Page */
   #splash-bio-container {
-    width: 400px;
+    min-width: 300px;
   }
 
   /* About Page */
