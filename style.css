@@ -158,12 +158,17 @@ a:hover span:after {
 }
 
 /* 3. About Page */
+#about-main-container {
+	display: flex;
+	justify-content: center;
+  }
+
 #about-me-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding: 5%;
+  margin:  5%;
   transition: transform 0.3s ease;
 }
 
@@ -192,14 +197,26 @@ a:hover span:after {
   gap: 10px;
 }
 
+#Experience_1,
+#Experience_2,
+#Experience_3,
+#Experience_4,
+#Experience_5 {
+  transition: transform 0.3s ease;
+	
+}
+
+#Experience_1:hover,
+#Experience_2:hover,
+#Experience_3:hover,
+#Experience_4:hover,
+#Experience_5:hover {
+	transform: scale(1.02);
+}
+
 .experience-article {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.experience-article:hover {
-  transform: scale(1.02);
 }
 
 .experience-article-img {
@@ -255,8 +272,8 @@ a:hover span:after {
   text-align: center;
 }
 
-/* Responsive */
-@media only screen and (max-width: 765px) {
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 650px) {
   body {
     min-width: 320px;
     margin: 0 auto;
@@ -286,10 +303,15 @@ a:hover span:after {
 
   /* Landing Page */
   #splash-bio-container {
-    min-width: 300px;
+    min-width: 500px;
   }
 
   /* About Page */
+  #about-main-container {
+	display: flex;
+	justify-content: center;
+  }
+
   #about-me-container {
 	display: flex;
     flex-direction: column;
@@ -301,6 +323,7 @@ a:hover span:after {
   }
 
   #about-me-text-container {
+	padding-left: 0%;
     width: 90%;
   }
 
@@ -328,7 +351,7 @@ a:hover span:after {
 
   .experience-article {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px; /* Added margin for separation */
@@ -367,23 +390,254 @@ a:hover span:after {
   #website-selector-container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (max-width: 800px) {
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  #navigation-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #navigation-button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation-button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+
+  #navigation-bar-logo {
+    max-width: 20%;
+    margin: 10px auto;
+  }
+
+  /* Landing Page */
+  #splash-bio-container {
+	min-width: 300px;
+  }
+
+  /* About Page */
+  #about-main-container {
+	display: flex;
+	justify-content: center;
+  }
+	
+  #about-me-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 765px;
+  }
+
+  #about-me-img {
+    width: 300px;
+  }
+
+  #about-me-text-container {
+	padding-left: 0%;
+    width: 90%;
+  }
+
+  /* Experience Page */
+  #experience-container {
+    padding-top: 5%;
+    align-items: center;
+  }
+
+  #experiences-grid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Experience_1,
+  #Experience_2,
+  #Experience_3,
+  #Experience_4,
+  #Experience_5 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-article {
+    width: 100%;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Added margin for separation */
+  }
+
+  .experience-article-img {
+    padding-top: 5%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .experience-article-text {
+    width: 75%;
+  }
+
+  /* Website Page */
+
+  .website-article {
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    padding: 5%;
+  }
+
+  .website-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .website-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #website-selector-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
 
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* Your CSS rules here */
-}
-
-/* Medium devices (tablets, 600px and up) */
-@media only screen and (min-width: 600px) {
-  /* Your CSS rules here */
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* Your CSS rules here */
+@media only screen and (max-width: 1000px) {
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  #navigation-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #navigation-button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation-button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+
+  #navigation-bar-logo {
+    max-width: 20%;
+    margin: 10px auto;
+  }
+
+  /* Landing Page */
+  #splash-bio-container {
+  }
+
+  /* About Page */
+  #about-main-container {
+	display: flex;
+	justify-content: center;
+  }
+	
+  #about-me-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 765px;
+  }
+
+  #about-me-img {
+    width: 300px;
+  }
+
+  #about-me-text-container {
+	padding-left: 0%;
+    width: 90%;
+  }
+
+  /* Experience Page */
+  #experience-container {
+    padding-top: 5%;
+    align-items: center;
+  }
+
+  #experiences-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Experience_1,
+  #Experience_2,
+  #Experience_3,
+  #Experience_4,
+  #Experience_5 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .experience-block-container {
+	width: 100%;
+    max-width: 90%;
+	}
+
+  .experience-article {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .experience-article-img {
+    padding-top: 5%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .experience-article-text {
+    width: 75%;
+  }
+
+  /* Website Page */
+  #website-selector-container {
+    display: flex;
+    flex-direction: column;
+  }
+	
+  #website_1 {
+		display: flex;
+  }
+
+  .website-article {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .website-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .website-container {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
