@@ -8,6 +8,84 @@ Within each section, properties are generally ordered as follows:
 6. Transitions and animations
 */
 
+/* Small Grid Template */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#small-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#small-grid-1 {
+  transition: transform 0.3s ease;
+	
+}
+
+#small-grid-1:hover {
+	transform: scale(1.02);
+}
+
+.small-grid-article {
+  display: flex;
+  align-items: center;
+}
+
+.small-grid-article-img {
+  width: 300px;
+  height: 300px;
+}
+
+.small-grid-article-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+/* 5. Large Grid Template */
+#grid-container {
+  padding: 5%;
+}
+
+#large-grid-1 {
+  transition: transform 0.3s ease;
+	
+}
+
+#large-grid-1:hover {
+	transform: scale(1.02);
+}
+
+.large-grid-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+  color: black;
+}
+
+.large-grid-img {
+  width: 15%;
+  height: 15%;
+}
+
+.large-grid-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+.description {
+  width: 95%;
+}
+
 /* 1. Global Styles */
 .webfont {
   font-family: "IBM Plex Sans Condensed", sans-serif;
