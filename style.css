@@ -224,6 +224,16 @@ a:hover span:after {
   border-radius: 25px;
 }
 
+.splash-bio-styling-about-me {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 5%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 25px;
+}
+
 .logo-img {
   width: 25%;
 }
@@ -276,8 +286,10 @@ a:hover span:after {
 }
 
 /* 4. Experience Page */
+.description {
+}
+
 #experience-container {
-  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -302,17 +314,22 @@ a:hover span:after {
 #Experience_3:hover,
 #Experience_4:hover,
 #Experience_5:hover {
-	transform: scale(1.02);
+   transform: scale(1.02);
 }
+
+.experience-block-container {
+   display: flex;
+   justify-content: center;
+   padding: 5%;
+  }
 
 .experience-article {
   display: flex;
-  align-items: center;
 }
 
 .experience-article-img {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 
 .experience-article-text {
@@ -663,12 +680,6 @@ a:hover span:after {
   /* Experience Page */
   #experience-container {
     padding-top: 5%;
-    align-items: center;
-  }
-
-  #experiences-grid-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
