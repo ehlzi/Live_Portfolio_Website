@@ -1,0 +1,275 @@
+/*
+Within each section, properties are generally ordered as follows:
+1. Display and positioning
+2. Box model (width, height, margin, padding)
+3. Typography
+4. Colors and backgrounds
+5. Borders and box-shadow
+6. Transitions and animations
+*/
+
+/* Display and positioning */
+html,
+body {
+  padding: 0;
+  margin-top: -10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#button-container {
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+  z-index: 50;
+  display: inline-block;
+  margin-left: 33%;
+  padding-left: 0%;
+}
+
+.about,
+.work,
+.team,
+.contact {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  float: center;
+}
+
+a span {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
+
+.splash {
+  background-image: url("https://images2.imgbox.com/1f/63/Ef1rSD5o_o.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0%;
+  height: 55em;
+  padding-bottom: 0px;
+}
+
+.supporting .col {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+  }
+}
+
+/* Box model (width, height, margin, padding) */
+header {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+nav {
+  padding-left: 0%;
+}
+
+.about,
+.work,
+.team,
+.contact {
+  padding: 2em;
+  margin: 0;
+}
+
+.splash {
+  padding-bottom: 0px;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.supporting {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.supporting p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.btn-main {
+  padding: 16px 40px;
+}
+
+.supporting a {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Typography */
+.about,
+.work,
+.team,
+.contact {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #333;
+  padding-top: 80px;
+}
+
+footer p {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn-main {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.supporting a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+/* Colors and backgrounds */
+.about,
+.work,
+.team,
+.contact {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a:hover span {
+  color: #dbdbdb;
+}
+
+main h1 {
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.supporting a {
+  background-color: white;
+  color: #333333;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Borders and box-shadow */
+.about,
+.work,
+.team,
+.contact {
+  border: none;
+  border-radius: 0px;
+}
+
+footer p {
+  border-radius: 0px;
+}
+
+.btn-main {
+  border-radius: 50px;
+}
+
+.supporting a {
+  border: 2px solid #333333;
+  border-radius: 50px;
+}
+
+.btn-main:hover {
+  border-radius: 50px;
+}
+
+/* Transitions and animations */
+.about,
+.work,
+.team,
+.contact {
+  transition: all 0.5s;
+}
+
+a span:after {
+  transition: 0.5s;
+}
+
+a:hover span {
+  transition: 0.5s;
+}
+
+a:hover span:after {
+  transition: 0.5s;
+}
+
+.btn-main {
+  transition: 0.2s;
+}
+
+.supporting a {
+  transition: 0.5s;
+}
+
+a:hover {
+  transition: 0.5s;
+  border-radius: 0px;
+}

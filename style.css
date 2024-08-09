@@ -23,7 +23,16 @@ Within each section, properties are generally ordered as follows:
   gap: 10px;
 }
 
-#small-grid-1 {
+#small-grid-1,
+#small-grid-2, 
+#small-grid-3,
+#small-grid-4,
+#small-grid-5,
+#small-grid-6,
+#small-grid-7 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
   transition: transform 0.3s ease;
 	
 }
@@ -35,17 +44,21 @@ Within each section, properties are generally ordered as follows:
 .small-grid-article {
   display: flex;
   align-items: center;
+  min-width: 80%;
 }
 
 .small-grid-article-img {
-  width: 300px;
-  height: 300px;
+  width: 172px;
+  height: 97px;
+  //border: 2px solid #555;
+  box-shadow: 1px 1px 5px lightgrey;
 }
 
 .small-grid-article-text {
   display: flex;
   flex-direction: column;
   padding-left: 2%;
+  min-width: 80%;
 }
 
 /* 5. Large Grid Template */
