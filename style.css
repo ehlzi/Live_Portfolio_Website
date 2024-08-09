@@ -191,7 +191,7 @@ a:hover span:after {
 #welcome-message-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #welcome-message-article {
