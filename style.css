@@ -9,18 +9,19 @@ Within each section, properties are generally ordered as follows:
 */
 
 /* Small Grid Template */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+#grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 #small-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  width: 80%;
 }
 
 #small-grid-1,
@@ -34,8 +35,7 @@ Within each section, properties are generally ordered as follows:
   justify-content: center;
   padding: 2%;
   transition: transform 0.3s ease;
-  border-radius: 10px;	
-	
+  border-radius: 10px;
 }
 
 #small-grid-1:hover {
@@ -64,7 +64,6 @@ Within each section, properties are generally ordered as follows:
 
 /* Large Grid Template */
 #grid-container {
-  padding: 5%;
 }
 
 #large-grid-1 {
@@ -291,6 +290,9 @@ a:hover span:after {
 
 #experience-container {
   padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #experiences-grid-container {
@@ -298,6 +300,7 @@ a:hover span:after {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  max-width: 80%;
 }
 
 #Experience_1,
