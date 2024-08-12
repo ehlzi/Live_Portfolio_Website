@@ -2,6 +2,10 @@ html {
   font-size: 18px;
 }
 
+body {
+  font-family: 'Roboto Regular', sans-serif;
+}
+
 @media only screen and (max-width: 1000px) {
   html {
     font-size: 16px;
@@ -31,7 +35,7 @@ html {
 
 .header .logo {
   flex-grow: 1;
-  color: #ffb78c;
+  color: lightgray;
 }
 
 .header li {
@@ -64,13 +68,13 @@ html {
   height: 50rem;
   background: url("Images/banner.jpg") center center no-repeat;
   background-size: cover;
-  color: #ffb78c;
+  color: lightgray;
 }
 
 .banner h2 {
   padding: .55rem 0;
-  border-top: 4px solid #ffb78c;
-  border-bottom: 4px solid #ffb78c;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   font-size: 1.44rem;
   letter-spacing: 2px;
   font-weight: 500;
@@ -106,7 +110,8 @@ html {
 
 .journal {
   padding: 0 25% 4rem 25%;
-  background-color: rgb(254, 231, 218);
+  //background-color: rgb(254, 231, 218);
+  background-color: lightgray;
   color: #4a4a4a;
 }
 
@@ -146,7 +151,7 @@ html {
 .journal .first-letter {
   float: left;
   padding-right: 1.4rem;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 7.44rem;
   color: #10b0d8;
   line-height: 0.87;
