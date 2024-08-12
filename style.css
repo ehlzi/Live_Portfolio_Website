@@ -62,7 +62,7 @@ Within each section, properties are generally ordered as follows:
   min-width: 80%;
 }
 
-/* 5. Large Grid Template */
+/* Large Grid Template */
 #grid-container {
   padding: 5%;
 }
@@ -145,7 +145,7 @@ a:hover span:after {
   opacity: 1;
 }
 
-/* 1. Navigation */
+/* 2. Navigation */
 #header-container {
   display: flex;
   padding: 0.5%;
@@ -184,7 +184,7 @@ a:hover span:after {
   width: 50px;
 }
 
-/* 2. Splash Screen */
+/* 3. Splash Screen */
 #splash-bio-container {
   min-width: 500px;
 }
@@ -259,7 +259,7 @@ a:hover span:after {
   opacity: 40%;
 }
 
-/* 3. About Page */
+/* 4. About Page */
 #about-main-container {
 	display: flex;
 	justify-content: center;
@@ -276,7 +276,6 @@ a:hover span:after {
 
 #about-me-img {
   width: 25%;
-  margin-bottom: 20%;
 }
 
 #about-me-text-container {
@@ -286,7 +285,7 @@ a:hover span:after {
   padding-left: 2%;
 }
 
-/* 4. Experience Page */
+/* 5. Experience Page */
 .description {
 }
 
@@ -340,7 +339,7 @@ a:hover span:after {
   padding-left: 2%;
 }
 
-/* 5. Website Page */
+/* 6. Website Page */
 #website-selector-container {
   padding: 5%;
 }
@@ -506,6 +505,58 @@ a:hover span:after {
 
 /* Medium devices (tablets, 600px and up) */
 @media only screen and (max-width: 800px) {
+ /* Small Grid Template */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#small-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#small-grid-1,
+#small-grid-2, 
+#small-grid-3,
+#small-grid-4,
+#small-grid-5,
+#small-grid-6,
+#small-grid-7 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  transition: transform 0.3s ease;
+  border-radius: 10px;	
+	
+}
+
+#small-grid-1:hover {
+	transform: scale(1.02);
+}
+
+.small-grid-article {
+  display: flex;
+  align-items: center;
+  min-width: 80%;
+}
+
+.small-grid-article-img {
+  width: 172px;
+  height: 97px;
+  //border: 2px solid #555;
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
+.small-grid-article-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  min-width: 80%;
+}
   body {
     min-width: 320px;
     margin: 0 auto;
@@ -626,7 +677,232 @@ a:hover span:after {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1050px) {
+	/* Small Grid Template */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#small-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#small-grid-1,
+#small-grid-2, 
+#small-grid-3,
+#small-grid-4,
+#small-grid-5,
+#small-grid-6,
+#small-grid-7 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  transition: transform 0.3s ease;
+  border-radius: 10px;	
+	
+}
+
+#small-grid-1:hover {
+	transform: scale(1.02);
+}
+
+.small-grid-article {
+  display: flex;
+  align-items: center;
+  min-width: 80%;
+}
+
+.small-grid-article-img {
+  width: 172px;
+  height: 97px;
+  //border: 2px solid #555;
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
+.small-grid-article-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  min-width: 80%;
+}
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Header 
+  #navigation-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #navigation-button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation-button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+
+  #navigation-bar-logo {
+    max-width: 20%;
+    margin: 10px auto;
+  }
+  */
+
+  /* Landing Page */
+  #splash-bio-container {
+  }
+
+  /* About Page */
+  #about-main-container {
+	display: flex;
+	justify-content: center;
+  }
+	
+  #about-me-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 765px;
+  }
+
+  #about-me-img {
+    width: 300px;
+  }
+
+  #about-me-text-container {
+	padding-left: 0%;
+    width: 90%;
+  }
+
+  /* Experience Page */
+  #experience-container {
+    padding-top: 5%;
+    align-items: center;
+  }
+
+  #Experience_1,
+  #Experience_2,
+  #Experience_3,
+  #Experience_4,
+  #Experience_5 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .experience-block-container {
+	width: 100%;
+    max-width: 90%;
+	}
+
+  .experience-article {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .experience-article-img {
+    padding-top: 5%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .experience-article-text {
+    width: 75%;
+  }
+
+  /* Website Page */
+  #website-selector-container {
+    display: flex;
+    flex-direction: column;
+  }
+	
+  #website_1 {
+		display: flex;
+  }
+
+  .website-article {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .website-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .website-container {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1330px) {
+	/* Small Grid Template */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#small-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#small-grid-1,
+#small-grid-2, 
+#small-grid-3,
+#small-grid-4,
+#small-grid-5,
+#small-grid-6,
+#small-grid-7 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  transition: transform 0.3s ease;
+  border-radius: 10px;	
+	
+}
+
+#small-grid-1:hover {
+	transform: scale(1.02);
+}
+
+.small-grid-article {
+  display: flex;
+  align-items: center;
+  min-width: 80%;
+}
+
+.small-grid-article-img {
+  width: 172px;
+  height: 97px;
+  //border: 2px solid #555;
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
+.small-grid-article-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  min-width: 80%;
+}
   body {
     min-width: 320px;
     margin: 0 auto;
