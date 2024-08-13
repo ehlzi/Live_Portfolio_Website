@@ -332,8 +332,8 @@ a:hover span:after {
 }
 
 .experience-article-img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .experience-article-text {
@@ -341,6 +341,73 @@ a:hover span:after {
   flex-direction: column;
   padding-left: 2%;
 }
+
+/* Certificate Section of Experiece Page */
+  .description {
+}
+
+#certificate-container {
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#certificate-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 80%;
+}
+
+#Certificate_1,
+#Certificate_2,
+#Certificate_3,
+#Certificate_4,
+#Certificate_5,
+#Certificate_6 {
+  transition: transform 0.3s ease;
+	
+}
+
+#Certificate_1:hover,
+#Certificate_2:hover,
+#Certificate_3:hover,
+#Certificate_4:hover,
+#Certificate_5:hover,
+#Certificate_6:hover {
+   transform: scale(1.02);
+}
+
+.certificate-block-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 5%;
+   border-radius: 10px;
+  }
+
+.certificate-article {
+  display: flex;
+}
+
+.certificate-article-img {
+  width: 75px;
+  height: 75px;
+}
+
+.certificate-article-cert {
+  width: 492px;
+  height: 380px;
+}
+
+.certificate-article-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
 
 /* 6. Website Page */
 #website-selector-container {
@@ -457,7 +524,8 @@ a:hover span:after {
   #Experience_2,
   #Experience_3,
   #Experience_4,
-  #Experience_5 {
+  #Experience_5,
+  .Experience_Cert {
     display: flex;
     justify-content: center;
   }
@@ -630,7 +698,8 @@ a:hover span:after {
   #Experience_2,
   #Experience_3,
   #Experience_4,
-  #Experience_5 {
+  #Experience_5,
+  .Experience_Cert {
     display: flex;
     justify-content: center;
   }
@@ -796,7 +865,8 @@ a:hover span:after {
   #Experience_2,
   #Experience_3,
   #Experience_4,
-  #Experience_5 {
+  #Experience_5,
+  .Experience_Cert {
     display: flex;
     justify-content: center;
   }
@@ -969,7 +1039,8 @@ a:hover span:after {
   #Experience_2,
   #Experience_3,
   #Experience_4,
-  #Experience_5 {
+  #Experience_5,
+  .Experience_Cert {
     display: flex;
     justify-content: center;
   }
