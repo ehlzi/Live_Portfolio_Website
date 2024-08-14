@@ -10,45 +10,45 @@ Within each section, properties are generally ordered as follows:
 
 /* Body */
 body {
-  /* Typography */
-  font-family: "Fjalla One", Arial;
-  color: #3FA7D6;
+    /* Typography */
+    font-family: "Fjalla One", Arial;
+    color: #3FA7D6;
 
-  /* Colors and backgrounds */
-  background-color: #59CD90;
+    /* Colors and backgrounds */
+    background-color: #59CD90;
 }
 
 /* Form */
 form {
-  /* Typography */
-  line-height: 25px;
+    /* Typography */
+    line-height: 25px;
 }
 
 /* Headings */
 h1 {
-  /* Typography */
-  font-size: 3em;
+    /* Typography */
+    font-size: 3em;
 
-  /* Display and positioning */
-  overflow: break;
+    /* Display and positioning */
+    overflow: break;
 }
 
 /* Overlay Section */
 .overlay {
-  /* Display and positioning */
-  display: block;
-  text-align: center;
+    /* Display and positioning */
+    display: block;
+    text-align: center;
 
-  /* Box model */
-  width: 80%;
-  min-width: 30%;
-  height: 90vh;
-  margin: 3% auto;
-  padding: 2%;
+    /* Box model */
+    width: 80%;
+    min-width: 30%;
+    height: 90vh;
+    margin: 3% auto;
+    padding: 2%;
 
-  /* Colors and backgrounds */
-  background-color: rgba(255, 255, 255, 0.9);
+    /* Colors and backgrounds */
+    background-color: rgba(255, 255, 255, 0.9);
 
-  /* Borders and box-shadow */
-  border-radius: 40px;
+    /* Borders and box-shadow */
+    border-radius: 40px;
 }

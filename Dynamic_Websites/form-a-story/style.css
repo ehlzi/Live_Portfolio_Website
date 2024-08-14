@@ -10,88 +10,88 @@ Within each section, properties are generally ordered as follows:
 
 /* Body */
 body {
-  font-family: "Open Sans", Arial;
-  background-color: rgb(255, 199, 64);
+    font-family: "Open Sans", Arial;
+    background-color: rgb(255, 199, 64);
 }
 
 /* Form */
 form {
-  line-height: 27px;
+    line-height: 27px;
 }
 
 /* Headings */
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 /* Inputs */
 input[type="text"],
 input[type="number"] {
-  /* Box model */
-  min-height: 15px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
+    /* Box model */
+    min-height: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
 }
 
 input[type="radio"] {
-  /* Box model */
-  margin-left: 12px;
+    /* Box model */
+    margin-left: 12px;
 }
 
 /* Main Section */
 #main {
-  /* Display and positioning */
-  text-align: center;
+    /* Display and positioning */
+    text-align: center;
 
-  /* Box model */
-  height: 80vh;
-  margin: 2% 10%;
-  overflow: auto;
+    /* Box model */
+    height: 80vh;
+    margin: 2% 10%;
+    overflow: auto;
 
-  /* Colors and backgrounds */
-  background-color: rgba(255, 255, 255, 0.8);
+    /* Colors and backgrounds */
+    background-color: rgba(255, 255, 255, 0.8);
 
-  /* Borders and box-shadow */
-  border-radius: 15px;
+    /* Borders and box-shadow */
+    border-radius: 15px;
 }
 
 /* Story Section */
 #story {
-  /* Box model */
-  padding: 0 3%;
+    /* Box model */
+    padding: 0 3%;
 }
 
 /* Top Section */
 #top {
-  /* Box model */
-  margin: 2% 10%;
+    /* Box model */
+    margin: 2% 10%;
 
-  /* Colors and backgrounds */
-  background-color: rgb(255, 255, 255);
+    /* Colors and backgrounds */
+    background-color: rgb(255, 255, 255);
 
-  /* Borders and box-shadow */
-  border-radius: 15px;
+    /* Borders and box-shadow */
+    border-radius: 15px;
 }
 
 /* Top Section Image */
 #top img {
-  /* Display and positioning */
-  display: block;
+    /* Display and positioning */
+    display: block;
 
-  /* Box model */
-  width: 35%;
-  margin: 0 auto;
+    /* Box model */
+    width: 35%;
+    margin: 0 auto;
 }
 
 /* Italics Class */
 .italics {
-  /* Typography */
-  font-style: italic;
+    /* Typography */
+    font-style: italic;
 }
 
 /* Word Class */
 .word {
-  /* Typography */
-  font-weight: bold;
-  text-decoration: underline;
+    /* Typography */
+    font-weight: bold;
+    text-decoration: underline;
 }

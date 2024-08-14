@@ -10,62 +10,62 @@ Within each section, properties are generally ordered as follows:
 
 /* 1. Display and positioning */
 #overlay {
-  margin: 3% auto;
-  height: 95vh;
-  display: block; /* Added based on the context */
+    margin: 3% auto;
+    height: 95vh;
+    display: block; /* Added based on the context */
 }
 
 /* 2. Box model (width, height, margin, padding) */
 #burger {
-  max-height: 30%;
+    max-height: 30%;
 }
 
 #overlay {
-  width: 80%;
-  border-radius: 40px;
+    width: 80%;
+    border-radius: 40px;
 }
 
 #logo {
-  height: 100px;
-  margin: auto;
-  display: flex;
+    height: 100px;
+    margin: auto;
+    display: flex;
 }
 
-.toppings label, 
+.toppings label,
 .cheesy label {
-  margin-right: 25px;
+    margin-right: 25px;
 }
 
 /* 3. Typography */
 body {
-  font-family: Rubik, Arial;
+    font-family: Rubik, Arial;
 }
 
 form {
-  text-align: center;
-  line-height: 30px;
+    text-align: center;
+    line-height: 30px;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
-.toppings label, 
+.toppings label,
 .cheesy label {
-  text-align: center; /* If applicable, though it may depend on context */
+    text-align: center; /* If applicable, though it may depend on context */
 }
 
 /* 4. Colors and backgrounds */
 body {
-  background-color: rgb(57, 169, 219);
+    background-color: rgb(57, 169, 219);
 }
 
 #overlay {
-  background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 form hr {
-  width: 15%;
+    width: 15%;
 }
 
 /* 5. Borders and box-shadow */

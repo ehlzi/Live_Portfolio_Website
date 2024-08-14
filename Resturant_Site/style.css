@@ -1,6 +1,6 @@
 /* Header Section */
 .header-container {
-       padding: 1%;
+    padding: 1%;
 }
 
 .nav-bar {
@@ -214,6 +214,7 @@ fieldset {
     flex-direction: column;
     width: 100%;
 }
+
 .contact-us-main {
     flex: 1;
     display: flex;
@@ -540,6 +541,7 @@ input[type="submit"] {
     /* Menu Section */
     .our-menu-container {
     }
+
     .our-menu {
         grid-template-columns: repeat(1, 1fr);
     }

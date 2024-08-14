@@ -18,3 +18,5 @@ fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
     .catch(error => {
         commitsContainer.innerHTML = `<p>Error fetching commits: ${error.message}</p>`;
     });
+
+const dum = 'dum';
