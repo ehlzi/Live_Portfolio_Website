@@ -7,39 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header id="header-container">
-
     <nav id="navigation-bar" class="webfont">
-
-        <section id="navigation-bar-logo-container">
+        <div id="navigation-bar-logo-container">
             <a href="index.html">
                 <img src="Images/portfoliosite/elogo.png" id="navigation-bar-logo" alt="nav logo">
             </a>
-        </section>
+        </div>
 
-        <section id="navigation-button-container">
+        <div id="navigation-button-container">
             <a href="index.html" class="navigation-button"><span>Home</span></a>
             <a href="about.html" class="navigation-button"><span>About</span></a>
             <a href="experience.html" class="navigation-button"><span>Experience</span></a>
             <a href="projects.html" class="navigation-button"><span>Projects</span></a>
             <a href="https://github.com/ehlzi" class="navigation-button"><span>GitHub</span></a>
             <a href="https://ervinelzie.myportfolio.com" class="navigation-button"><span>Photography</span></a>
-        </section>
-
+        </div>
     </nav>
-
 </header>
 
 <main id="pdf-viewer">
-
-    <embed src="Design_Projects/blk_film/BlkFilm_Design_System.pdf" type="application/pdf" width="75%" height="750px"/>
-
+    <div class="pdf-container">
+        <embed src="Design_Projects/blk_film/BlkFilm_Design_System.pdf" type="application/pdf" width="100" height="750">
+    </div>
 </main>
 
 <footer id="footer" class="webfont">
@@ -47,5 +42,4 @@
 </footer>
 
 </body>
-
 </html>
